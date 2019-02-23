@@ -1,0 +1,90 @@
+.ContactMe{
+  flex-grow:1;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  .message{
+    min-height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    .textLine{
+      padding:10px 0px 10px 0px;
+    }
+    .textLine1{
+      font-size:40px;
+      font-weight:bold;
+      font-family:'Major Mono Display';
+    }
+    .textLine2{
+      font-size:34px;
+      font-family:'Noto Serif SC';
+    }
+    .textLine3{
+      font-size:34px;
+      font-weight:bold;
+      font-family: 'Amatic SC';
+      .bug{
+        height:20px;
+        width:20px;
+      }
+    }
+    .textLine4{
+      font-size:28px;
+      font-weight:bold;
+      font-family: 'Oranienbaum';
+    }
+  }
+  .mediaContainer{
+    .ContactIcon{
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      margin:5px;
+    }
+    .ContactIcon:hover{
+      animation: hoverIcon 1s cubic-bezier(.36,.07,.19,.97) both;
+      box-shadow:0px 0px 5px black;
+    }
+    @keyframes hoverIcon{
+      0%{
+        transform: rotate(0deg);
+      }
+      90%{
+        transform: rotate(726deg);
+      }
+      100%{
+        transform: rotate(720deg);
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:500px){
+  .ContactMe{
+      justify-content: flex-start;
+    .message{
+      .textLine1{
+      font-size:30px;
+      }
+      .textLine2{
+      font-size:30px;
+      }
+      .textLine3{
+      font-size:25px;
+      }
+      .textLine4{
+      font-size:16px;
+      }
+    }
+    .mediaContainer{
+      .ContactIcon{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        margin:5px;
+      }
+    }
+  }
+}

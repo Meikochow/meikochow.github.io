@@ -2,30 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/vIcon.png" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gafata" rel="stylesheet">
+    <title>Victor Cojocaru</title>
   </head>
+  <style>
+  #loading{
+    margin:30vh auto 0px auto;
+    transform: opacity 0.5s ease-in-out;
+  }
+    #loadingImageHead{
+      margin:0px auto 0px auto;
+      display:block;
+      animation: shake 1.9s cubic-bezier(.36,.07,.19,.97) infinite;
+      transform: translate3d(0, 0, 0);
+    }
+    #loadingImageBody{
+      margin:-7px auto 0px auto;
+      display:block;
+    }
+    .greeting{
+      text-align:center;
+      font-size:18px;
+      color:#737373;
+    }
+    @keyframes shake {
+  10% {
+    transform: rotateZ(0deg);
+  }
+  20%{
+    transform: rotateZ(18deg);
+  }
+  30%{
+    transform: rotateZ(35deg);
+  }
+  40% {
+    transform: rotateZ(50deg);
+  }
+  50% {
+    transform: rotateZ(60deg);
+  }
+  60% {
+    transform: rotateZ(-40deg);
+  }
+  70% {
+   transform: rotateZ(20deg);
+ }
+ 75% {
+  transform: rotateZ(-10deg);
+}
+  80% {
+    transform: rotateZ(0deg);
+  }
+  90%{
+    transform: rotateZ(0deg);
+  }
+}
+  </style>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="loading">
+      <img src=".\assets\background\kodamaHeadLoading.png" id="loadingImageHead" alt="Kodama"/>
+      <img src=".\assets\background\kodamaBodyLoading.png" id="loadingImageBody" alt="Loading"/>
+      <div class="greeting">This is Kodama<br/>He is loading the website</div>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
