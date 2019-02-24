@@ -11,10 +11,10 @@ class ContactMe extends Component {
     return (
       <div className="ContactMe">
         <div className="message">
-        <span className="textLine textLine1"><Icon type="code" />Need a Developer?</span>
-        <span className="textLine textLine2"><Icon type="desktop" /> Want help with a project?</span>
-        <span className="textLine textLine3"><img src="./assets/icons/bug.png" className="bug" alt="insect"/>Curious about the exciting world of hexapods?</span>
-        <span className="textLine textLine4"><Icon type="user" />Find me on any of these platforms</span>
+        <div className="textLine textLine1"><Icon type="code" className="animation1" />Need a Developer?</div>
+        <div className="textLine textLine2"><Icon type="desktop" className="monitor"/> Want help with a project?</div>
+        <div className="textLine textLine3"><img src="./assets/icons/bug.png" className="bug" alt="insect"/>Curious about the exciting world of hexapods?</div>
+        <div className="textLine textLine4"><Icon type="user" />Find me on any of these platforms</div>
         </div>
         <div className="mediaContainer">
           <img src="./assets/icons/linkedin.png" className="ContactIcon" alt="linkedin" onClick={() => this.redirect('https://www.linkedin.com/in/victor-cojocaru-97015bb3/')} title="LinkedIn"/>

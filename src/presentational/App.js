@@ -45,7 +45,7 @@ class App extends Component {
     let contact= this.state.components[4] ? <ContactMe /> : null;
     return (
       <div className="App">
-        <Tabs defaultActiveKey="1" onChange={this.callback} >
+        <Tabs defaultActiveKey="1" onChange={this.callback} size="large" >
           <TabPane tab={<img src='./assets/icons/aboutMe.png' className="icon aboutMeIcon" alt="Menu Item" />} key="1" className="tabPane">{home}</TabPane>
           <TabPane tab={<img src='./assets/icons/portfolio.png' className="icon" alt="Menu Item"/>} key="2" className="tabPane">{projects}</TabPane>
           <TabPane tab={<img src='./assets/icons/certificateBlack.png' className="icon" alt="Menu Item"/>} key="3"className="tabPane">{certifications}</TabPane>

@@ -21,63 +21,57 @@
   </head>
   <style>
   #loading{
+    /* border:1px solid red; */
+    border-radius:50%;
+    padding:40px;
     margin:30vh auto 0px auto;
     transform: opacity 0.5s ease-in-out;
+    animation: jump 1.6s cubic-bezier(.36,.07,.19,.97) infinite;
   }
-    #loadingImageHead{
+    #loader{
       margin:0px auto 0px auto;
       display:block;
-      animation: shake 1.9s cubic-bezier(.36,.07,.19,.97) infinite;
+      animation: spin 1.6s cubic-bezier(.36,.07,.19,.97) infinite;
       transform: translate3d(0, 0, 0);
     }
-    #loadingImageBody{
-      margin:-7px auto 0px auto;
-      display:block;
+    @keyframes jump {
+      0% {
+        transform:translate(0px,0px);
+      }
+      10% {
+        /* transform: rotateZ(0deg); */
+        transform:translate(0px,-25px);
+      }
+      20% {
+        /* transform: rotateZ(0deg); */
+        transform:translate(0px,20px);
+      }
+      30% {
+        /* transform: rotateZ(0deg); */
+        transform:translate(0px,-5px);
+      }
+      40% {
+        /* transform: rotateZ(0deg); */
+        transform:translate(0px,3px);
+      }
+
+      100% {
+        transform:translate(0px,0px);
+      }
     }
-    .greeting{
-      text-align:center;
-      font-size:18px;
-      color:#737373;
+    @keyframes spin {
+      0% {
+        transform: rotateZ(0deg);
+      }
+      100%{
+        transform:rotate(720deg);
+      }
     }
-    @keyframes shake {
-  10% {
-    transform: rotateZ(0deg);
-  }
-  20%{
-    transform: rotateZ(18deg);
-  }
-  30%{
-    transform: rotateZ(35deg);
-  }
-  40% {
-    transform: rotateZ(50deg);
-  }
-  50% {
-    transform: rotateZ(60deg);
-  }
-  60% {
-    transform: rotateZ(-40deg);
-  }
-  70% {
-   transform: rotateZ(20deg);
- }
- 75% {
-  transform: rotateZ(-10deg);
-}
-  80% {
-    transform: rotateZ(0deg);
-  }
-  90%{
-    transform: rotateZ(0deg);
-  }
-}
   </style>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="loading">
-      <img src=".\assets\background\kodamaHeadLoading.png" id="loadingImageHead" alt="Kodama"/>
-      <img src=".\assets\background\kodamaBodyLoading.png" id="loadingImageBody" alt="Loading"/>
-      <div class="greeting">This is Kodama<br/>He is loading the website</div>
+      <img src=".\assets\icons\reactLogo.png" id="loader" alt="loader"/>
     </div>
     <div id="root"></div>
     <!--
