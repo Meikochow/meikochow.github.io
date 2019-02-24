@@ -15,86 +15,81 @@
       font-size:40px;
       font-weight:bold;
       font-family:'Major Mono Display';
-      .animation1{
-        animation: questionSign 4s cubic-bezier(.36,.07,.19,.97) infinite;
-        // border:1px solid red;
-        display:inline-block;
-      }
-      @keyframes questionSign {
-        0% {
-         transform: translate(0px,0px);
-        }
-        20%{
-          transform: translate(-15px,0px);
-        }
-        22% {
-          transform: translate(4px,0px);
-        }
-        29% {
-          transform: translate(-2px,0px);
-        }
-        35% {
-          transform: translate(1px,0px);
-        }
-        26% {
-          transform: translate(-1px,0px);
-        }
-        40% {
-          transform: translate(0px,0px);
-        }
-      }
     }
     .textLine2{
       font-size:34px;
       font-family:'Noto Serif SC';
-      .monitor{
-      animation: monitor 3s cubic-bezier(.36,.07,.19,.97) infinite;
-    }
-      @keyframes monitor {
-        0% {
-         transform: rotateY(0deg) translate(0px,0px);
-        }
-        100% {
-          transform: rotateY(360deg) translate(0px,0px);
-        }
-      }
     }
     .textLine3{
       font-size:34px;
       font-weight:bold;
       font-family: 'Amatic SC';
+      .terarium{
+        width:20px;
+        display:inline-block;
+        animation: terarium 14s  infinite;
+    }
+      @keyframes terarium {
+        0% {
+         transform: translate(0px,0px);
+        }
+        5% {
+         transform:translate(0px,-22px);
+        }
+        10% {
+         transform: translate(338px,-22px);
+        }
+        15% {
+         transform: translate(338px,21px);
+        }
+        20% {
+         transform: translate(0px,21px);
+        }
+        25% {
+         transform: translate(0px,0px);
+        }
+      }
       .bug{
         height:20px;
         width:20px;
-        animation: bug 10s cubic-bezier(.36,.07,.19,.97) infinite;
+        animation: bug 14s  infinite;
       }
       @keyframes bug {
-        0% {
-         transform: rotateZ(0deg) translate(0px,0px);
-         opacity:1;
+        4% {
+         transform:rotateZ(0deg);
+        }
+        5% {
+         transform:rotateZ(90deg);
+        }
+        9% {
+         transform: rotateZ(90deg);
         }
         10% {
-         transform: rotateZ(-90deg) translate(0px,00px);
+         transform: rotateZ(180deg);
+        }
+        14% {
+         transform: rotateZ(180deg);
         }
         15% {
-         transform: rotateZ(-90deg) translate(0px,-20px);
+         transform: rotateZ(270deg);
+        }
+        19% {
+         transform: rotateZ(270deg);
         }
         20% {
-         transform: rotateZ(-180deg) translate(20px,0px);
-         opacity:1;
+         transform: rotateZ(360deg);
         }
-        30% {
-         transform: rotateZ(-720deg) translate(10px,0px);
-         opacity:0;
+        23% {
+         transform: rotateZ(360deg);
         }
-        31%{
-          transform: rotateZ(0deg) translate(-10px,0px);
+        24% {
+         transform: rotateZ(360deg);
         }
-        32%{
-          transform: rotateZ(0deg) translate(0px,0px);
+        25% {
+         transform: rotateZ(0deg);
         }
-        80%{
-          opacity:1;
+        26%{
+          transform: rotateZ(0deg);
         }
       }
     }
@@ -127,9 +122,7 @@
       }
     }
   }
-
 }
-
 @media screen and (max-width:500px){
   .ContactMe{
       justify-content: flex-start;

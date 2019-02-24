@@ -11,9 +11,9 @@ class ContactMe extends Component {
     return (
       <div className="ContactMe">
         <div className="message">
-        <div className="textLine textLine1"><Icon type="code" className="animation1" />Need a Developer?</div>
+        <div className="textLine textLine1"><Icon type="code" />Need a Developer?</div>
         <div className="textLine textLine2"><Icon type="desktop" className="monitor"/> Want help with a project?</div>
-        <div className="textLine textLine3"><img src="./assets/icons/bug.png" className="bug" alt="insect"/>Curious about the exciting world of hexapods?</div>
+        <div className="textLine textLine3"><div className="terarium"><img src="./assets/icons/bug.png" className="bug" alt="insect"/></div>Curious about the exciting world of hexapods?</div>
         <div className="textLine textLine4"><Icon type="user" />Find me on any of these platforms</div>
         </div>
         <div className="mediaContainer">
