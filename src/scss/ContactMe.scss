@@ -27,32 +27,26 @@
       .terarium{
         width:20px;
         display:inline-block;
-        animation: terarium 14s  infinite;
+        animation: terarium 10s  infinite;
     }
       @keyframes terarium {
-        0% {
-         transform: translate(0px,0px);
-        }
         5% {
-         transform:translate(0px,-22px);
+         transform:translate(0px,0px);
         }
         10% {
-         transform: translate(338px,-22px);
+         transform: translate(90px,0px);
         }
         15% {
-         transform: translate(338px,21px);
+         transform: translate(90px,0px);
         }
         20% {
-         transform: translate(0px,21px);
-        }
-        25% {
          transform: translate(0px,0px);
         }
       }
       .bug{
         height:20px;
         width:20px;
-        animation: bug 14s  infinite;
+        animation: bug 10s  infinite;
       }
       @keyframes bug {
         4% {
@@ -65,10 +59,10 @@
          transform: rotateZ(90deg);
         }
         10% {
-         transform: rotateZ(180deg);
+         transform: rotateZ(270deg);
         }
         14% {
-         transform: rotateZ(180deg);
+         transform: rotateZ(300deg);
         }
         15% {
          transform: rotateZ(270deg);
