@@ -121,6 +121,14 @@ const projectList = {
     },
   ],
   fullStack: [
+    {projectName :"Awesome Book Store",
+    projectDescription:"MERN Stack, CRUD Application deployed to Heroku, all data including images stored in the db. User can add/remove items to/from cart",
+    projectThumbNailLink :"./assets/projects/fullStack/awesome_book_store.png",
+    projectTech : "Node, Express,React, Redux, MongoDB, SCSS, Ant-Design",
+    projectHref :"https://fierce-bayou-11189.herokuapp.com/",
+    code:'github',
+    codeLink:"https://github.com/Meikochow/MERN_book_store"
+  },
     {projectName :"Anonymous message board",
     projectDescription:"Full-Stack app that allows anonymous users to create custom boards, threads and messages",
     projectThumbNailLink :"./assets/projects/fullStack/anon board.png",
@@ -176,6 +184,15 @@ const projectList = {
   }
   ],
   games: [
+    {
+    projectName :"PuzzleIt",
+    projectDescription:"A ReactJs puzzle game",
+    projectThumbNailLink :"./assets/projects/games/puzzleIt.PNG",
+    projectTech :"ReactJs, CSS, keyframes and HTML5",
+    projectHref :"https://puzzle-it.glitch.me/",
+    code:'github',
+    codeLink:"https://github.com/Meikochow/PuzzleIt"
+  },
   {
    projectName :"Tic Tac Toe",
    projectDescription:"Tic-Tac-Toe game based on the MinMax Algorithm, designed with a customizable difficulty level which can be shared on your facebook.",
@@ -222,6 +239,15 @@ const projectList = {
    codeLink:"https://codepen.io/Meikochow/pen/YjBJmg/"
   },
   {
+   projectName :"Stack Attack",
+   projectDescription:"Canvas 'Space Attack' - like game",
+   projectThumbNailLink :"./assets/projects/games/stack-attack.png",
+   projectTech :"JavaScript, CSS3, HTML5",
+   projectHref :"https://codepen.io/Meikochow/full/mzeOYr",
+   code:'codepen',
+   codeLink:"https://codepen.io/Meikochow/pen/mzeOYr"
+  },
+  {
   projectName :"5 Seconds Rule",
   projectDescription:"A ReactJs game where You've got five seconds to name three things in a category",
   projectThumbNailLink :"./assets/projects/games/5secrule.png",
@@ -238,15 +264,6 @@ const projectList = {
   projectHref :"https://anime-flip.glitch.me/",
   code:'github',
   codeLink:"https://github.com/Meikochow/anime-flip"
-  },
-  {
-  projectName :"PuzzleIt",
-  projectDescription:"A ReactJs puzzle game",
-  projectThumbNailLink :"./assets/projects/games/puzzleIt.PNG",
-  projectTech :"ReactJs, CSS, keyframes and HTML5",
-  projectHref :"https://puzzle-it.glitch.me/",
-  code:'github',
-  codeLink:"https://github.com/Meikochow/PuzzleIt"
   }
   ],
   D3: [
