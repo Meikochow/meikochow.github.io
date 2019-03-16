@@ -90,7 +90,7 @@ class Projects extends Component {
                 <div className="Projects">
                   {projectList.react.map(v =>
                     <ProjectCard
-                    key={Math.floor(Math.random() * 452362)}
+                    key={Math.floor(Math.random() * 452572)}
                     imageLink={v.projectThumbNailLink}
                     title={v.projectName}
                     description = {v.projectDescription}
@@ -107,7 +107,7 @@ class Projects extends Component {
                   <div className="Projects">
                   {projectList.javascript.map(v =>
                     <ProjectCard
-                    key={Math.floor(Math.random() * 452362)}
+                    key={Math.floor(Math.random() * 4506592)}
                     imageLink={v.projectThumbNailLink}
                     title={v.projectName}
                     description = {v.projectDescription}
@@ -124,7 +124,7 @@ class Projects extends Component {
                   <div className="Projects">
                   {projectList.D3.map(v =>
                     <ProjectCard
-                    key={Math.floor(Math.random() * 452362)}
+                    key={Math.floor(Math.random() * 45236565672)}
                     imageLink={v.projectThumbNailLink}
                     title={v.projectName}
                     description = {v.projectDescription}
@@ -141,7 +141,7 @@ class Projects extends Component {
                   <div className="Projects">
                   {projectList.games.map(v =>
                     <ProjectCard
-                    key={Math.floor(Math.random() * 452362)}
+                    key={Math.floor(Math.random() * 4525673692)}
                     imageLink={v.projectThumbNailLink}
                     title={v.projectName}
                     description = {v.projectDescription}

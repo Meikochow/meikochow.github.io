@@ -8,4 +8,18 @@
   .sidetab{
   border:1px solid red;
   }
+  .ant-tabs-nav .ant-tabs-tab{
+    // margin:0px 0px 0px 0px;
+    color:black;
+    border:1px solid green;
+    width:auto;
+    padding:10px 0px 10px 0px !important;
+    text-align:center;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active{
+    color:black;
+    width:auto !important;
+    // border:1px solid red;
+
+  }
 }

@@ -14,8 +14,13 @@
     flex: 1 0 auto;
     min-height:600px;
   }
+  .ant-tabs-nav .ant-tabs-tab{
+    color:black;
+    width:90px;
+  }
   .ant-tabs-nav .ant-tabs-tab-active{
     color:black;
+    width:90px;
   }
   .ant-tabs-nav .ant-tabs-tab:hover{
     color:black;
@@ -24,9 +29,6 @@
 .ant-tabs-ink-bar{
   background:black;
 }
-// .ant-tabs-top .ant-tabs-ink-bar-animated{
-//     min-width:17%;
-// }
   footer{
     margin:4px;
     .footerImage{
@@ -71,9 +73,23 @@
   @media screen and (max-width:500px){
     .icon{
       height:25px;
+      margin:0px 0px 0px 0px;
     }
     .ant-tabs-nav .ant-tabs-tab{
-      margin:0px 0px 0px 0px;
+      color:black;
+      width:auto;
+      padding:10px 0px 10px 0px !important;
+      text-align:center;
+      transition-duration: 1s;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active{
+      color:black;
+      width:auto !important;
+      border-width:0px 0px 2px 0px;
+      border-style:solid;
+      border-color:grey;
+      transition-duration: 1s;
+
     }
   }
 }
