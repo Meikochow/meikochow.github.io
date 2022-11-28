@@ -51,7 +51,7 @@ class App extends Component {
           <TabPane tab={<img src='./assets/icons/certificateBlack.png' className="icon" alt="Menu Item"/>} key="3"className="tabPane">{certifications}</TabPane>
           <TabPane tab={<img src='./assets/icons/contactBlack.png' className="icon" alt="Menu Item"/>} key="4" className="tabPane">{contact}</TabPane>
         </Tabs>
-        <footer>Built with <img src="./assets/icons/reactLogo.png" className="footerImage" alt="react" title="React"/> and <img src="./assets/icons/ant.png" className="footerImage" alt="ant-design" title="Ant-Design"/> by Victor Cojocaru 2019</footer>
+        <footer>Built with <img src="./assets/icons/reactLogo.png" className="footerImage" alt="react" title="React"/> and <img src="./assets/icons/ant.png" className="footerImage" alt="ant-design" title="Ant-Design"/> by Victor Cojocaru 2022</footer>
       </div>
     );
   }
