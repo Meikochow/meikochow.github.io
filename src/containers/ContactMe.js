@@ -18,8 +18,8 @@ class ContactMe extends Component {
         </div>
         <div className="mediaContainer">
           <img src="./assets/icons/linkedin.png" className="ContactIcon" alt="linkedin" onClick={() => this.redirect('https://www.linkedin.com/in/victor-cojocaru-97015bb3/')} title="LinkedIn"/>
-          <img src="./assets/icons/codePen.png" className="ContactIcon" alt="CodePen" onClick={() => this.redirect('https://codepen.io/Meikochow/')} title="CodePen"/>
-          <img src="./assets/icons/github.png" className="ContactIcon" alt="github" onClick={() => this.redirect('https://github.com/Meikochow')} title="GitHub"/>
+          <img src="./assets/icons/codePen.png" className="ContactIcon codePen-icon" alt="CodePen" onClick={() => this.redirect('https://codepen.io/Meikochow/')} title="CodePen"/>
+          <img src="./assets/icons/github.png" className="ContactIcon github-icon" alt="github" onClick={() => this.redirect('https://github.com/Meikochow')} title="GitHub"/>
           <img src="./assets/icons/twitter.png" className="ContactIcon" alt="twitter" onClick={() => this.redirect('https://twitter.com/Victor01684891?lang=en')} title="Twitter"/>
           <img src="./assets/icons/fcc.png" className="ContactIcon" alt="freecodecamp" onClick={() => this.redirect('https://www.freecodecamp.org/meikochow')} title="Free Code Camp"/>
         </div>

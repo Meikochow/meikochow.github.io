@@ -14,21 +14,25 @@
     flex: 1 0 auto;
     min-height:600px;
   }
-  .ant-tabs-nav .ant-tabs-tab{
-    color:black;
-    width:90px;
+
+  .ant-tabs-nav{
+    .ant-tabs-tab{
+      color:black;
+      width:90px;
+    }
+    .ant-tabs-tab-active{
+      color:black;
+      width:90px;
+    }
+    .ant-tabs-tab:hover{
+      color:black;
+      text-shadow:0px 0px 10px #c6c6c6;
+    }
+    .ant-tabs-ink-bar{
+      background:gray;
+    }
   }
-  .ant-tabs-nav .ant-tabs-tab-active{
-    color:black;
-    width:90px;
-  }
-  .ant-tabs-nav .ant-tabs-tab:hover{
-    color:black;
-    text-shadow:0px 0px 10px #c6c6c6;
-  }
-.ant-tabs-ink-bar{
-  background:black;
-}
+
   footer{
     margin:4px;
     .footerImage{
@@ -40,37 +44,42 @@
     height:40px;
     transform: rotateZ(0deg);
     transition: 1s;
+    width: 50px;
   }
   .icon:hover{
-    animation: hover 0.4s cubic-bezier(.36,.07,.19,.97) both;
+    animation: hover 0.8s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
   }
   .icon:active{
-    animation: hover 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    animation: hover 0.8s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
   }
-  @keyframes hover {
-  10% {
-    transform:translate(0px,0px);
-  }
-  40%{
-    transform:translate(0px,-6px);
-  }
-  50% {
-    transform:translate(0px,0px);
-  }
-  70% {
-   transform:translate(0px,2px);
-  }
-  90%{
-    transform:translate(0px,0px);
-
-  }
-}
   .aboutMeIcon{
     border-radius:25%;
+    width: auto !important;
   }
-  @media screen and (max-width:500px){
+  .letter-icon{
+    margin-bottom: -5px;
+  }
+
+  .brush-icon{
+  }
+  @keyframes hover {
+    0%{
+      transform: rotate(0deg);
+    }
+    15%{
+      transform: rotate(30deg);
+    }
+    30%{
+      transform: rotate(-30deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+}
+
+  @media screen and (max-width:800px){
     .icon{
       height:25px;
       margin:0px 0px 0px 0px;
@@ -87,6 +96,134 @@
       border-width:0px 0px 2px 0px;
       border-style:solid;
       border-color:grey;
+    }
+  }
+}
+.DarkApp {
+  background-color: #000;
+  .icon{
+    height:40px;
+    transform: rotateZ(0deg);
+    transition: 1s;
+    width: 50px;
+    fill: #fff !important;
+    color: white;
+    filter: invert(100%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  }
+  .aboutMeIcon{
+    border-radius:25%;
+    width: auto !important;
+    filter: none;
+  }
+  .letter-icon{
+    margin-bottom: -5px;
+  }
+  .ant-tabs-bar{
+    border: none;
+    .ant-tabs-nav{
+      .ant-tabs-tab{
+        color:white;
+        width:90px;
+      }
+      .ant-tabs-tab-active{
+        color:white;
+        width:90px;
+      }
+      .ant-tabs-tab:hover{
+        color:white;
+        text-shadow:0px 0px 10px #c6c6c6;
+      }
+      .ant-tabs-ink-bar{
+        background:white;
+        border: 1px solid white;
+      }
+    }
+  }
+  @media screen and (max-width:800px){
+
+    .ant-tabs-bar{
+      border: none;
+      .ant-tabs-nav{
+        .ant-tabs-tab{
+          color:black;
+          width:auto;
+          padding:10px 0px 10px 0px !important;
+          text-align:center;
+          .icon{
+            height:25px;
+            margin:0px 0px 0px 0px;
+          }
+        }
+        .ant-tabs-tab-active{
+          color:black;
+          width:auto !important;
+          border-width:0px 0px 2px 0px;
+          border-style:solid;
+          border-color:grey;
+        }
+      }
+    }
+  }
+
+  footer{
+    color: #fff;
+    margin:4px;
+    .footerImage{
+      width:20px;
+      height:20px;
+    }
+  }
+  .Home {
+    .myImageContainer {
+      .myImage:hover{
+        filter: grayscale(0%);
+        box-shadow:0px 0px 10px 6px white;
+      }
+    }
+    .textContainer{
+      .textBlock{
+        color: #fff;
+      }
+    }
+  }
+  .Paintings-container {
+    .Paintings-header{
+      color: #fff;
+    }
+  }
+  .sidetab{
+    .ant-tabs-nav .ant-tabs-tab{
+      color:#fff;
+      width: 100px;
+      text-align: left;
+      
+    }
+    .Projects{
+      min-height:600px;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1 0 auto;
+    
+    }
+  }
+
+  .Certifications{
+    .aboutfcc{
+      color: #fff;
+    }
+  }
+  .ContactMe{
+    color: #fff;
+    .bug{
+      filter: invert(100%) sepia(100%) saturate(2476%) hue-rotate(60deg) brightness(118%) contrast(119%);      
+    }
+    .codePen-icon{
+      filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(80deg) brightness(100%) contrast(100%);
+    }
+    .github-icon{
+      filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg) brightness(200%) contrast(100%);
     }
   }
 }

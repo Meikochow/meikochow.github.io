@@ -1,0 +1,51 @@
+.LightbulbButton-container{
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+
+  .LightbulbButton{
+    border: none;
+    outline: none;
+    padding: 10px 0 0 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position:relative;
+    z-index: 100!important;
+    cursor: pointer;
+      .lightBulvSvg{
+        width: 20px;
+      }
+      .light{
+        filter: invert(100%) sepia(30%) saturate(100%) hue-rotate(50deg) brightness(200%) contrast(100%);
+      }
+      .dark{
+      }
+      .lighbulb-string{
+        border: 1px dotted grey;
+        border-width: 0 0 0 1px;
+        height: 30px;
+        margin: -10px 0 0 0;
+        width: 1;
+        transition: 0.2s;
+        position:relative;
+        z-index: -1 !important;
+      }
+    }
+  .lightContainer{
+    background: #000;
+  }
+  .darkContainer{
+    background: #fff;
+  }
+  .LightbulbButton:active{
+    .lighbulb-string{
+        transform:translate(0px, 10px);
+    }
+  }
+}
