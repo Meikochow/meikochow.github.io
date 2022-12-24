@@ -1,8 +1,79 @@
 .Paintings-container {
-  padding: 10% 0 0 0;
   .Paintings-header{
     color: #000;
     font-family:'Dancing Script';
     font-size: 40px;
+  }
+  .painting-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .painting-wrapper{
+      height: 300px;
+      margin: 10px;
+      .painting{
+        position: relative;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+  
+}
+.painting-modal-container{
+  .modal-body{
+    .painting-info_container{
+      position:absolute;
+      width: 100%;
+      font-weight: 800;
+      text-shadow: 
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 4px #fff,
+      0 0 5px #fff,
+      0 0 6px #fff,
+      0 0 7px #fff,
+      0 0 8px #fff,
+      0 0 9px #fff;
+      font-family:'Dancing Script';
+      font-size: 40px;
+      .title{
+
+      }
+    }
+    .modal-image{
+      object-fit:contain;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and(max-width:1000px){
+  .Paintings-container {
+    .Paintings-header{
+      color: #000;
+      font-family:'Dancing Script';
+      font-size: 40px;
+    }
+    .painting-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      .painting-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        margin: 4px;
+        .painting{
+          position: relative;
+          width: 100%;
+          object-fit: fill;
+        }
+      }
+    }
   }
 }

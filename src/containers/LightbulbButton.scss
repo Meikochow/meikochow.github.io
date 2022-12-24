@@ -49,3 +49,58 @@
     }
   }
 }
+
+@media screen and(max-width:1000px){
+
+  .LightbulbButton-container{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  
+    .LightbulbButton{
+      border: none;
+      outline: none;
+      padding: 10px 0 0 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position:relative;
+      z-index: 100!important;
+      cursor: pointer;
+        .lightBulvSvg{
+          width: 20px;
+        }
+        .light{
+          filter: invert(100%) sepia(30%) saturate(100%) hue-rotate(50deg) brightness(200%) contrast(100%);
+        }
+        .dark{
+        }
+        .lighbulb-string{
+          border: 1px solid grey;
+          border-width: 0 0 0 1px;
+          height: 16px;
+          margin: -8px 0 0 0;
+          width: 1;
+          transition: 0.2s;
+          position:relative;
+          z-index: -1 !important;
+        }
+      }
+    .lightContainer{
+      background: #000;
+    }
+    .darkContainer{
+      background: #fff;
+    }
+    .LightbulbButton:active{
+      .lighbulb-string{
+          transform:translate(0px, 6px);
+      }
+    }
+  }
+}
