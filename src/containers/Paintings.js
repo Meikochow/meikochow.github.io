@@ -64,19 +64,21 @@ class Paintings extends Component {
           {paintingsList.acryl_on_canvas.map(res => {
             return (
               <div key={res.resprojectName} className="painting-wrapper">
-                <img
-                  src={res.projectThumbNailLink}
-                  alt={res.projectDescription}
-                  className="painting"
-                  onClick={
-                    () => this.openCertificate({
-                      image: res.projectThumbNailLink,
-                      title: res.projectName,
-                      description: res.projectDescription,
-                      tech: res.projectTech
-                    })
-                  }
-                />
+                <div className="painting">
+                  <img
+                    src={res.projectThumbNailLink}
+                    alt={res.projectDescription}
+                    className="painting-img"
+                    onClick={
+                      () => this.openCertificate({
+                        image: res.projectThumbNailLink,
+                        title: res.projectName,
+                        description: res.projectDescription,
+                        tech: res.projectTech
+                      })
+                    }
+                  />
+                </div>
               </div>
             );
           })}
