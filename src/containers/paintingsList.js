@@ -1,6 +1,48 @@
 const projectList = {
   acryl_on_canvas: [
     {
+      projectName: "",
+      projectDescription: "",
+      projectThumbNailLink: "./assets/pntgs/depths.jpg",
+      projectTech: ""
+    },
+    {
+      projectName: "",
+      projectDescription: "",
+      projectThumbNailLink: "./assets/pntgs/baloons.jpg",
+      projectTech: ""
+    },
+    {
+      projectName: "",
+      projectDescription: "",
+      projectThumbNailLink: "./assets/pntgs/road.jpg",
+      projectTech: ""
+    },
+    {
+      projectName: "Field flowers",
+      projectDescription: "\"Aku no Hana\" by Shuzo Oshimi inspired nightmare-scape.",
+      projectThumbNailLink: "./assets/pntgs/field_flowers.jpg",
+      projectTech: "Acryl on canvas 11\"/14\""
+    },
+    {
+      projectName: "Highland",
+      projectDescription: "A dreamscape.",
+      projectThumbNailLink: "./assets/pntgs/highland.jpg",
+      projectTech: "Acryl on canvas 11\"/14\""
+    },
+    {
+      projectName: "Impact",
+      projectDescription: "Heroic figure in his final moments.",
+      projectThumbNailLink: "./assets/pntgs/impact.jpg",
+      projectTech: "Acryl on canvas ..\"/..\""
+    },
+    {
+      projectName: "Risen",
+      projectDescription: "Fast paced colourful awakening",
+      projectThumbNailLink: "./assets/pntgs/risen.jpg",
+      projectTech: "Acryl on canvas 11\"/14\""
+    },
+    {
       projectName: "A Whale",
       projectDescription: "There is a whale. And it is headed down.",
       projectThumbNailLink: "./assets/pntgs/a_whale.jpg",
@@ -58,30 +100,6 @@ const projectList = {
       projectName: "Festive",
       projectDescription: " A pumpkin surounded by color swirls.",
       projectThumbNailLink: "./assets/pntgs/festive.jpg",
-      projectTech: "Acryl on canvas 11\"/14\""
-    },
-    {
-      projectName: "Field flowers",
-      projectDescription: "\"Aku no Hana\" by Shuzo Oshimi inspired nightmare-scape.",
-      projectThumbNailLink: "./assets/pntgs/field_flowers.jpg",
-      projectTech: "Acryl on canvas 11\"/14\""
-    },
-    {
-      projectName: "Highland",
-      projectDescription: "A dreamscape.",
-      projectThumbNailLink: "./assets/pntgs/highland.jpg",
-      projectTech: "Acryl on canvas 11\"/14\""
-    },
-    {
-      projectName: "Impact",
-      projectDescription: "Heroic figure in his final moments.",
-      projectThumbNailLink: "./assets/pntgs/impact.jpg",
-      projectTech: "Acryl on canvas ..\"/..\""
-    },
-    {
-      projectName: "Risen",
-      projectDescription: "Fast paced colourful awakening",
-      projectThumbNailLink: "./assets/pntgs/risen.jpg",
       projectTech: "Acryl on canvas 11\"/14\""
     },
     {

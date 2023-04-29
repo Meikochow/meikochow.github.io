@@ -1,0 +1,23 @@
+.artistStatement{
+  color: #fff;
+  min-height: 84vh;
+  min-width: 40vw;
+  padding: 1vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Amatic SC';
+  .as1{ 
+      font-size: 5em
+  }
+  .profilePic{
+    object-fit: contain !important;
+    width: 26vw;
+    filter: grayscale(100%);
+  }
+  .as2, .as3, .as4{ 
+    font-size: 3em
+}
+}

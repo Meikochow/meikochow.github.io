@@ -233,3 +233,144 @@
 .felipa{font-family: 'Felipa';}
 .amatic{font-family: 'Amatic SC';}
 .noto{font-family:'Noto Serif SC';}
+
+
+.greet-prompt_wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+    .greet-button {
+      cursor: pointer;
+      border: none;
+      width: 50%;
+      height: 100%;
+      outline: none;
+      background-color: rgba(0,0,0,0.1);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .button-contents{
+        height: 120px;
+        width: 120px;
+
+        .icon {
+          width: 100%;
+          filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg) brightness(200%) contrast(100%);
+        }
+        .brush-icon{
+          height: 100px; 
+        }
+        .code-icon{
+          height: 100px; 
+        }
+      }
+    }
+
+    .sway{
+      animation: sway 3s 1;
+    }
+    @keyframes sway {
+      0% {
+       transform:rotate(-10deg) scale(1, 1);;
+      }
+      30% {
+       transform: rotate(390deg) scale(2, 2);
+      }
+      50% {
+       transform: rotate(-90deg) scale(3, 3);
+      }
+      80% {
+       transform: rotate(100deg) scale(4, 4);
+      }
+      100% {
+        transform: rotate(-30deg) scale(5, 5);
+      }
+    }
+    .shake{
+      animation: shake 3s 1;
+    }
+    @keyframes shake {
+      0% {
+       transform:rotate(-10deg) scale(1, 1);;
+      }
+      15%{
+        transform: rotate(10deg) scale(1.5, 1.5);
+      }
+      30% {
+       transform: rotate(-20deg) scale(2, 2);
+      }
+      50% {
+       transform: rotate(20deg) scale(3, 3);
+      }
+      70% {
+       transform: rotate(-10deg) scale(4, 4);
+      }
+      75% {
+        transform: rotate(10deg) scale(5, 5);
+       }
+       80% {
+        transform: rotate(-10deg) scale(5, 5);
+       }
+       85% {
+        transform: rotate(10deg) scale(5, 5);
+       }
+       90% {
+        transform: rotate(-10deg) scale(5, 5);
+       }
+       95% {
+        transform: rotate(10deg) scale(5, 5);
+       }
+      100% {
+        transform: rotate(-10deg) scale(5, 5);
+      }
+    }
+    .grow{
+      animation: grow 3s 1;
+
+    }
+    @keyframes grow {
+      0% {
+       width: 50%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    .hide{
+      opacity: 0;
+      width: 0;
+      text-align: end;
+    }
+
+    .fade-out{
+      animation: fade-out 3s 1;
+    }
+    @keyframes fade-out {
+      0% {
+       opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .divider{
+      border-width: 0 1px 0 0;
+      border-color: rgba(118, 118, 118, 0.4);
+      border-style: solid;
+      height: 100%;
+    }
+}
+
+
+.align-rigth{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
