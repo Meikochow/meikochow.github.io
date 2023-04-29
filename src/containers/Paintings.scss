@@ -1,94 +1,49 @@
 .Paintings-container {
-  .Paintings-header{
-    color: #000;
-    font-family:'Dancing Script';
-    font-size: 40px;
-  }
-  .painting-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .painting-wrapper{
-      height: 300px;
-      width: 300px;
-      margin: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      overflow:hidden;
-      .painting{
-      .painting-img{
-        object-fit: scale-down;
-        width: 134%;
-      }
-      }
-    }
-  }
-}
-.painting-modal-container{
-  .modal-body{
-    .painting-info_container{
-      position:absolute;
-      width: 100%;
-      font-weight: 800;
-      text-shadow: 
-      0 0 1px #fff,
-      0 0 2px #fff,
-      0 0 3px #fff,
-      0 0 4px #fff,
-      0 0 5px #fff,
-      0 0 6px #fff,
-      0 0 7px #fff,
-      0 0 8px #fff,
-      0 0 9px #fff;
-      font-family:'Dancing Script';
-      font-size: 40px;
-      .title{
-
-      }
-    }
-    .modal-image{
-      object-fit:contain;
-      width: 100%;
-    }
-  }
-}
-
-@media screen and(max-width:1000px){
-  .Paintings-container {
-    padding: none;
-    .Paintings-header{
-      color: #000;
-      font-family:'Dancing Script';
-      font-size: 40px;
-    }
-    .painting-container{
-      padding: none;
-      display: grid;
-      gap: 0px 20px;
-      grid-template-areas: "main_content top" "main_content bottom";
-      grid-template-columns: 30% 30% 30%;
-      justify-items: center;
-      .painting-wrapper{
-        height: fit-content;
-        width: 100%;
+ height: 90vh;
+  .painting-wrapper{
+    height: 86vh;
+    display:flex !important;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+      .painting-img {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow:hidden;
-        .painting{
-          height: 26vw;
-          width: 130%;
-          .painting-img{
-            object-fit: scale-down;
-            width: 100%;
-          }
-        }
+        max-height: 83vh;
+        max-width: 100%;
+        margin:auto;
+        object-fit: contain !important;
+        justify-content: flex-end;
+        align-self: flex-end;
+        justify-self: flex-end;
+        align-items: flex-end;
       }
+  }
+  .left-button, .right-button{
+    cursor:pointer;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 3vw;
+    padding: 0 10px;
+    height: 5vh;
+    font-size: 100%;
+    svg {
+      size: 100px;
+      fill: #fff;
     }
+  }
+  .left-button:hover, .right-button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 1s;
+  }
+  .left-button{
+    position: absolute;
+    top: 46vh;
+    left: 2vw;
+  }
+  .right-button{
+    position:absolute;
+    top: 46vh;
+    right: 2vw;
   }
 }

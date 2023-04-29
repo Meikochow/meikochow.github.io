@@ -1,91 +1,39 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import './Paintings.scss';
-import { Modal } from 'antd';
+import { Carousel, Icon } from 'antd';
 import 'antd/dist/antd.css';
 import paintingsList from './paintingsList';
 
 class Paintings extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      painting: {
-        image: '',
-        title: '',
-        description: '',
-        tech: ''
-      },
-      fullScreenImage: false
-    }
-  }
-  openCertificate = (certObj) => {
-    this.setState({
-      painting: certObj,
-      fullScreenImage: true
-    })
-  }
-  closeCertificate = () => {
-    this.setState({
-      fullScreenImage: false
-    })
+    this.state = {};
+    this.slider = React.createRef(null);
   }
 
-  render() {
-    const {
-      painting,
-      fullScreenImage
-    } = this.state;
-    return (
+render() {
+  return (
 
-      <div className="Paintings-container">
-        <Modal
-          visible={fullScreenImage}
-          centered
-          onCancel={this.closeCertificate}
-          footer={false}
-          className="painting-modal-container"
-        >
-          <div className="modal-body">
-            <div className="painting-info_container">
-              <div className="title">
-                {painting.title}
-              </div>
-              <div className="tech">
-                {/* {painting.tech} */}
-              </div>
-            </div>
-            <img
-              src={painting.image}
-              alt={painting.title}
-              className='modal-image'
-            />
-          </div>
-        </Modal>
-        <div className="painting-container">
-          {paintingsList.acryl_on_canvas.map(res => {
+    <div className="Paintings-container">
+      <Carousel ref={this.slider}>
+      {paintingsList.acryl_on_canvas.map((res, i) => {
             return (
-              <div key={res.resprojectName} className="painting-wrapper">
-                <div className="painting">
+              <div key={`${res.resprojectName} - ${i}`} className="painting-wrapper">
                   <img
                     src={res.projectThumbNailLink}
                     alt={res.projectDescription}
                     className="painting-img"
-                    onClick={
-                      () => this.openCertificate({
-                        image: res.projectThumbNailLink,
-                        title: res.projectName,
-                        description: res.projectDescription,
-                        tech: res.projectTech
-                      })
-                    }
                   />
-                </div>
               </div>
             );
           })}
-        </div>
-      </div>
-    );
-  }
+
+      </Carousel>
+      <button onClick={() => this.slider.current.prev()} className='left-button'><Icon type="left" /></button>
+      <button onClick={() => this.slider.current.next()} className='right-button'><Icon type="right" /></button>
+    </div>
+  );
+}
 }
 
 export default Paintings;
