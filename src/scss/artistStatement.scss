@@ -10,8 +10,14 @@
   align-items: center;
   font-family: 'Amatic SC';
   .as1{ 
-      font-size: 5em
+      font-size: 5em;
   }
+
+  @keyframes rainbow-animation {
+    to {
+        background-position: 4500vh;
+    }
+}
   .profilePic{
     object-fit: contain !important;
     width: 26vw;
@@ -19,5 +25,105 @@
   }
   .as2, .as3, .as4{ 
     font-size: 2.5em
+  }
+  .human{
+    animation: blood 0.1s linear infinite;
+    
+  }
+
+    @keyframes blood {
+    0%{
+      color: rgb(255, 255, 255);
+      text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    }
+    25%{
+      
+      color: rgb(208, 67, 67);
+      text-shadow: rgb(128, 86, 86) 1px 0 10px;
+    }
+
+    50% {
+      color: rgb(208, 6, 6);
+      text-shadow: rgb(208, 6, 6) 1px 0 10px;
+    }
+    75%{
+      
+      color: rgb(55, 18, 18);
+      text-shadow: rgb(128, 86, 86) 1px 0 10px;
+    }
+
+    100% {
+      color:rgb(255, 0, 0);
+      text-shadow: rgb(255, 255, 255) 1px 0 10px;
+  }
+  
 }
+.bliss{
+  animation: sparkle 0.1s linear infinite;
+  
+}
+
+  @keyframes sparkle {
+  0%{
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+  }
+  25%{
+    
+    color: rgb(16, 227, 255);
+    text-shadow: rgb(0, 247, 255) 1px 0 10px;
+  }
+
+  50% {
+    color: rgb(55, 0, 255);
+    text-shadow: rgb(0, 17, 255) 1px 0 10px;
+  }
+  75%{
+    
+    color: rgb(36, 18, 116);
+    text-shadow: rgb(8, 6, 143) 1px 0 10px;
+  }
+
+  100% {
+    color:rgb(0, 225, 255);
+    text-shadow: rgb(20, 247, 255) 1px 0 10px;
+}
+  }
+
+  @keyframes shake {
+    0% {
+     transform:rotate(-10deg) scale(1, 1);;
+    }
+    15%{
+      transform: rotate(10deg) scale(1.5, 1.5);
+    }
+    30% {
+     transform: rotate(-20deg) scale(2, 2);
+    }
+    50% {
+     transform: rotate(20deg) scale(3, 3);
+    }
+    70% {
+     transform: rotate(-10deg) scale(4, 4);
+    }
+    75% {
+      transform: rotate(10deg) scale(5, 5);
+     }
+     80% {
+      transform: rotate(-10deg) scale(5, 5);
+     }
+     85% {
+      transform: rotate(10deg) scale(5, 5);
+     }
+     90% {
+      transform: rotate(-10deg) scale(5, 5);
+     }
+     95% {
+      transform: rotate(10deg) scale(5, 5);
+     }
+    100% {
+      transform: rotate(-10deg) scale(5, 5);
+    }
+  }
+
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../scss/App.scss';
-import { Tabs } from 'antd';
+import { Tabs, Icon } from 'antd';
 import 'antd/dist/antd.css';
 
 import Home from '../containers/home';
@@ -10,6 +10,7 @@ import ContactMe from '../containers/ContactMe';
 import Paintings from '../containers/Paintings';
 import LightbulbButton from '../containers/LightbulbButton';
 import ArtistStatement from '../containers/artistStatement';
+import Rainbow from '../containers/rainbow';
 
 const TabPane = Tabs.TabPane;
 
@@ -25,7 +26,8 @@ class App extends Component {
         5: false
       },
       darkMode: true,
-      ui: ''
+      ui: '',
+      start: 0
     }
   }
   componentDidMount() {
@@ -51,14 +53,16 @@ class App extends Component {
         brushButtonClass: 'grow',
         brushButtonIconClass: 'sway',
         codeButtonClass: 'hide',
-        dividerClass: 'fade-out'
+        dividerClass: 'fade-out',
+        start: 1
       }, () => {
         setTimeout(() => {
           this.setState({
             ui: view,
             brushButtonClass: '',
             brushButtonIconClass: '',
-            codeButtonClass: ''
+            codeButtonClass: '',
+            start: 0
           })
         }, 2990)
       })
@@ -69,8 +73,8 @@ class App extends Component {
         codeButtonIconClass: 'shake',
         brushButtonClass: 'hide',
         greetContainerClass: 'align-rigth',
-        dividerClass: 'fade-out'
-
+        dividerClass: 'fade-out',
+        start: 1
       }, () => {
         setTimeout(() => {
           this.setState({
@@ -78,11 +82,24 @@ class App extends Component {
             codeButtonClass: '',
             codeButtonIconClass: '',
             brushButtonClass: '',
-            greetContainerClass: ''
+            greetContainerClass: '',
+            start: 0
           })
         }, 2990)
       })
     }
+  }
+
+  backToMainMenu = () => {
+    this.setState({
+      ui: '', components: {
+        1: true,
+        2: false,
+        3: false,
+        4: false,
+        5: false
+      },
+    })
   }
 
   render() {
@@ -95,7 +112,8 @@ class App extends Component {
       brushButtonIconClass,
       codeButtonIconClass,
       greetContainerClass,
-      dividerClass
+      dividerClass,
+      start
     } = this.state;
 
     if (ui === '') {
@@ -106,10 +124,10 @@ class App extends Component {
             className={`greet-button ${brushButtonClass}`}
           >
             <div className='button-contents '>
-              <img
-                src='./assets/icons/paintbrush.svg'
-                className={`icon brush-icon ${brushButtonIconClass}`}
-                alt="Paintings" />
+              <Rainbow
+                start={start}
+                classNames={`icon brush-icon ${brushButtonIconClass}`}
+              />
             </div>
 
           </button>
@@ -121,7 +139,7 @@ class App extends Component {
             <div className='button-contents'>
               <img
                 src='./assets/icons/dossier2.svg'
-                className={`icon brush-icon ${codeButtonIconClass}`}
+                className={`icon code-icon ${codeButtonIconClass}`}
                 alt="Projects"
               />
             </div>
@@ -139,17 +157,19 @@ class App extends Component {
           </Tabs>
           <footer>Built with <img src="./assets/icons/reactLogo.png" className="footerImage" alt="react" title="React" /> and <img src="./assets/icons/ant.png" className="footerImage" alt="ant-design" title="Ant-Design" /> by Victor Cojocaru 2019 - {new Date().getFullYear()}.</footer>
           <LightbulbButton darkMode={darkMode} callback={() => this.setState({ darkMode: !darkMode })} />
+          <button className="home_button" onClick={this.backToMainMenu}><Icon type="left" /></button>
 
         </div>
       );
     } else {
       return (
         <div className={`App DarkApp`}>
-        <Tabs defaultActiveKey="1" onChange={this.callback} size="large" >
+          <Tabs defaultActiveKey="1" onChange={this.callback} size="large" >
             <TabPane tab={<img src='./assets/icons/aboutMe.png' className="icon aboutMeIcon" alt="About me" />} key="1" className="tabPane">{components[1] && <ArtistStatement />}</TabPane>
             <TabPane tab={<img src='./assets/icons/paintbrush.svg' className="icon brush-icon" alt="Paintings" />} key="2" className="tabPane">{components[2] && <Paintings />}</TabPane>
           </Tabs>
           <footer>Built with <img src="./assets/icons/reactLogo.png" className="footerImage" alt="react" title="React" /> and <img src="./assets/icons/ant.png" className="footerImage" alt="ant-design" title="Ant-Design" /> by Victor Cojocaru 2019 - {new Date().getFullYear()}.</footer>
+          <button className="home_button" onClick={this.backToMainMenu}><Icon type="left" /></button>
         </div>
       )
 
