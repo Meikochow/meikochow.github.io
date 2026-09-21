@@ -7,9 +7,10 @@
   flex-wrap: wrap;
   .aboutfcc{
     padding:0px 10px 0px 10px;
-    font-size:18px;
+    font-size: clamp(18px, 1vw, 50px);
     color:black;
     font-family:'Noto Serif SC';
+    width: 100%;
     .fccName{
       color:green;
     }
@@ -30,9 +31,10 @@
   margin:0px auto 0px auto !important;
   text-align:center;
   .verifyCertificate{
+    display: block;
     color:green;
     cursor:pointer;
-    font-size:20px;
+    font-size:40px;
   }
   .verifyCertificate:hover{
     text-decoration:underline;
