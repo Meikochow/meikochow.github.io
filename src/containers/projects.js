@@ -34,6 +34,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="Projects-container">
+        <div className="projects-disclaimer"><span className="text">Since Glitch and RawGit stopped working a while ago, some projects might be inaccessible atm. <br/>I'm working on finding a new platform to host them. Apologies for the inconvenience! </span>🙏🙏🙏</div>
         <div className="Projects">
           {/* 
           Unfortunately all of these are dead on the BE

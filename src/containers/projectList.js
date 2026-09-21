@@ -36,33 +36,33 @@ const projectList = {
      code:'codepen',
      codeLink:"https://codepen.io/Meikochow/pen/eKwpXO/"
     },
-    {
-     projectName :"Math Marathon",
-     projectDescription:"Responsive ReactJs game of selecting the correct result against time, with a shareable score",
-     projectThumbNailLink :"./assets/projects/games/mathMarathon.png",
-     projectTech :"ReactJs, SCSS and HTML5",
-     projectHref :"https://codepen.io/Meikochow/full/YjBJmg/",
-     code:'codepen',
-     codeLink:"https://codepen.io/Meikochow/pen/YjBJmg/"
-    },
-    {
-    projectName :"Anime Card Match",
-    projectDescription:"A ReactJs, Anime-themed, memory game",
-    projectThumbNailLink :"./assets/projects/react/flip.png",
-    projectTech :"ReactJs, CSS, keyframes and HTML5",
-    projectHref :"https://anime-flip.glitch.me/",
-    code:'github',
-    codeLink:"https://github.com/Meikochow/anime-flip"
-    },
-    {
-    projectName :"PuzzleIt",
-    projectDescription:"A ReactJs puzzle game",
-    projectThumbNailLink :"./assets/projects/react/puzzleIt.PNG",
-    projectTech :"ReactJs, CSS, keyframes and HTML5",
-    projectHref :"https://puzzle-it.glitch.me/",
-    code:'github',
-    codeLink:"https://github.com/Meikochow/PuzzleIt"
-    }
+    // {
+    //  projectName :"Math Marathon",
+    //  projectDescription:"Responsive ReactJs game of selecting the correct result against time, with a shareable score",
+    //  projectThumbNailLink :"./assets/projects/games/mathMarathon.png",
+    //  projectTech :"ReactJs, SCSS and HTML5",
+    //  projectHref :"https://codepen.io/Meikochow/full/YjBJmg/",
+    //  code:'codepen',
+    //  codeLink:"https://codepen.io/Meikochow/pen/YjBJmg/"
+    // },
+    // {
+    // projectName :"Anime Card Match",
+    // projectDescription:"A ReactJs, Anime-themed, memory game",
+    // projectThumbNailLink :"./assets/projects/react/flip.png",
+    // projectTech :"ReactJs, CSS, keyframes and HTML5",
+    // projectHref :"https://anime-flip.glitch.me/",
+    // code:'github',
+    // codeLink:"https://github.com/Meikochow/anime-flip"
+    // },
+    // {
+    // projectName :"PuzzleIt",
+    // projectDescription:"A ReactJs puzzle game",
+    // projectThumbNailLink :"./assets/projects/react/puzzleIt.PNG",
+    // projectTech :"ReactJs, CSS, keyframes and HTML5",
+    // projectHref :"https://puzzle-it.glitch.me/",
+    // code:'github',
+    // codeLink:"https://github.com/Meikochow/PuzzleIt"
+    // }
   ],
   javascript: [
     {
@@ -101,24 +101,24 @@ const projectList = {
      code:'codepen',
      codeLink:"https://codepen.io/Meikochow/pen/PaNpvB/"
     },
-    {
-     projectName :"Tic Tac Toe",
-     projectDescription:"Tic-Tac-Toe game based on the MinMax Algorithm, designed with a customizable difficulty level which can be shared on your facebook.",
-     projectThumbNailLink :"./assets/projects/games/ticTacToe.png",
-     projectTech :"JavaScript + jQuery, SCSS and HTML5",
-     projectHref :"https://codepen.io/Meikochow/full/odoqpe/",
-     code:'codepen',
-     codeLink:"https://codepen.io/Meikochow/pen/odoqpe/"
-    },
-    {
-     projectName :"Simon Game",
-     projectDescription:"Simon Game app that creates a series of sounds and lights which require the user to repeat the sequence, based on their memory.",
-     projectThumbNailLink :"./assets/projects/games/simonGame.png",
-     projectTech :"JavaScript + jQuery, SCSS and HTML5",
-     projectHref :"https://codepen.io/Meikochow/full/OZEMgz/",
-     code:'codepen',
-     codeLink:"https://codepen.io/Meikochow/pen/OZEMgz/"
-    },
+    // {
+    //  projectName :"Tic Tac Toe",
+    //  projectDescription:"Tic-Tac-Toe game based on the MinMax Algorithm, designed with a customizable difficulty level which can be shared on your facebook.",
+    //  projectThumbNailLink :"./assets/projects/games/ticTacToe.png",
+    //  projectTech :"JavaScript + jQuery, SCSS and HTML5",
+    //  projectHref :"https://codepen.io/Meikochow/full/odoqpe/",
+    //  code:'codepen',
+    //  codeLink:"https://codepen.io/Meikochow/pen/odoqpe/"
+    // },
+    // {
+    //  projectName :"Simon Game",
+    //  projectDescription:"Simon Game app that creates a series of sounds and lights which require the user to repeat the sequence, based on their memory.",
+    //  projectThumbNailLink :"./assets/projects/games/simonGame.png",
+    //  projectTech :"JavaScript + jQuery, SCSS and HTML5",
+    //  projectHref :"https://codepen.io/Meikochow/full/OZEMgz/",
+    //  code:'codepen',
+    //  codeLink:"https://codepen.io/Meikochow/pen/OZEMgz/"
+    // },
   ],
   fullStack: [
     {projectName :"Awesome Book Store",

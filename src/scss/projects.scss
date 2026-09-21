@@ -1,5 +1,13 @@
 
 .Projects-container{
+  .projects-disclaimer{
+    font-size: clamp(14px, 1vw, 30px);
+    margin: 10px;
+    .text{
+    color: white;
+    mix-blend-mode: difference;
+    }
+  }
   .Projects{
     min-height:600px;
     display:flex;

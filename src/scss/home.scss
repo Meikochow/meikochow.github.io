@@ -1,21 +1,23 @@
 .Home{
-  flex-grow:1;
-  height:100% !important;
-  min-height:400px;
-  display:flex;
-  flex-direction:row;
-  align-items: center;
+    align-items: center;
+    flex-grow:1;
+    height:100% !important;
+    min-height:600px;
+    display:flex;
+    flex-direction:column;
   .myImageContainer{
-    min-width:400px;
-    max-width:700px;
-    flex-grow:0;
-    display:block;
+    min-width:600px;
+    width:50vw;
+    max-width:1000px;
+    margin:auto;
+    flex-grow:1;
     padding:5px 5px 5px 25px;
     .myImage{
       min-width:50%;
       width:100%;
       max-width:100%;
-      margin:auto;
+      min-width:300px;
+      width:100%;
       border-radius:50%;
       -webkit-filter: grayscale(100%);
       -moz-filter: grayscale(100%);
@@ -45,7 +47,7 @@
     }
     .greeting{
       font-family:'Fredericka the Great';
-      font-size:60px;
+      font-size:80px;
       font-weight:400;
       animation: hoverText1 9s cubic-bezier(.36,.07,.19,.97) infinite;
       .name{color:#006622}

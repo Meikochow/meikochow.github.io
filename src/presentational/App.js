@@ -26,7 +26,7 @@ class App extends Component {
         5: false
       },
       darkMode: true,
-      ui: '',
+      ui: 'code',
       start: 0
     }
   }
@@ -101,6 +101,17 @@ class App extends Component {
       },
     })
   }
+  see = () => {
+    this.setState({
+      ui: 'art', components: {
+        1: true,
+        2: false,
+        3: false,
+        4: false,
+        5: false
+      },
+    })
+  }
 
   render() {
     const {
@@ -153,11 +164,10 @@ class App extends Component {
             <TabPane tab={<img src='./assets/icons/aboutMe.png' className="icon aboutMeIcon" alt="About me" />} key="1" className="tabPane">{components[1] && <Home />}</TabPane>
             <TabPane tab={<img src='./assets/icons/dossier2.svg' className="icon" alt="Projects" />} key="3" className="tabPane">{components[3] && <Projects />}</TabPane>
             <TabPane tab={<img src='./assets/icons/certificate.svg' className="icon" alt="Accreditations" />} key="4" className="tabPane">{components[4] && <Certifications />}</TabPane>
-            <TabPane tab={<img src='./assets/icons/envelope.svg' className="icon letter-icon" alt="Contact me" />} key="5" className="tabPane">{components[5] && <ContactMe />}</TabPane>
+            <TabPane tab={<img src='./assets/icons/envelope.svg' className="icon letter-icon" alt="Contact me" />} key="5" className="tabPane">{components[5] && <ContactMe see={this.see}/>}</TabPane>
           </Tabs>
-          <footer>Built with <img src="./assets/icons/reactLogo.png" className="footerImage" alt="react" title="React" /> and <img src="./assets/icons/ant.png" className="footerImage" alt="ant-design" title="Ant-Design" /> by Victor Cojocaru 2019 - {new Date().getFullYear()}.</footer>
+          <footer>Made by Victor 2019 - {new Date().getFullYear()}.</footer>
           <LightbulbButton darkMode={darkMode} callback={() => this.setState({ darkMode: !darkMode })} />
-          <button className="home_button" onClick={this.backToMainMenu}><Icon type="left" /></button>
 
         </div>
       );
@@ -168,7 +178,7 @@ class App extends Component {
             <TabPane tab={<img src='./assets/icons/aboutMe.png' className="icon aboutMeIcon" alt="About me" />} key="1" className="tabPane">{components[1] && <ArtistStatement />}</TabPane>
             <TabPane tab={<img src='./assets/icons/paintbrush.svg' className="icon brush-icon" alt="Paintings" />} key="2" className="tabPane">{components[2] && <Paintings />}</TabPane>
           </Tabs>
-          <footer>Built with <img src="./assets/icons/reactLogo.png" className="footerImage" alt="react" title="React" /> and <img src="./assets/icons/ant.png" className="footerImage" alt="ant-design" title="Ant-Design" /> by Victor Cojocaru 2019 - {new Date().getFullYear()}.</footer>
+          <footer>Made by Victor 2019 - {new Date().getFullYear()}.</footer>
           <button className="home_button" onClick={this.backToMainMenu}><Icon type="left" /></button>
         </div>
       )
