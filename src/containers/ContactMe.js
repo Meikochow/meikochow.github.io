@@ -13,7 +13,7 @@ class ContactMe extends Component {
         <div className="message">
         <div className="textLine textLine1"><Icon type="code" />Need a good Developer?</div>
         <div className="textLine textLine2"><Icon type="eye" className="see" onClick={this.props.see}/> Want help with a project?</div>
-        <div className="textLine textLine3"><div className="terarium"><img src="./assets/icons/bug.png" className="bug" alt="insect"/></div>Are you tormented by bugs?</div>
+        <div className="textLine textLine3"><div className="terarium"><img src="./assets/icons/bug.png" className="bug" alt="bug"/></div>Are you tormented by bugs?</div>
         <div className="textLine textLine4"><Icon type="user" />Find me on any of these platforms</div>
         </div>
         <div className="mediaContainer">

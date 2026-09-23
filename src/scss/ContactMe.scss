@@ -58,15 +58,24 @@
       @keyframes terarium {
         5% {
          transform:translate(0px,0px);
+         opacity: 1;
         }
-        10% {
-         transform: translate(300px,0px);
+        6% {
+         transform: translate(250px,0px);
         }
-        15% {
-         transform: translate(300px,0px);
+        22%{
+          opacity: 1;
         }
-        20% {
+        23% {
+         transform: translate(250px,0px);
+         opacity: 0;
+        }
+        26% {
          transform: translate(0px,0px);
+         
+        }
+        80% {
+         opacity: 0;
         }
       }
       .bug{
@@ -100,17 +109,22 @@
         20% {
          transform: rotateZ(360deg);
         }
-        23% {
-         transform: rotateZ(360deg);
+        20.4% {
+         transform: rotateZ(280deg);
         }
-        24% {
-         transform: rotateZ(360deg);
+        20.8% {
+         transform: rotateZ(320deg);
         }
-        25% {
-         transform: rotateZ(0deg);
+        21.2% {
+         transform: rotateZ(290deg);
         }
-        26%{
-          transform: rotateZ(0deg);
+        21.6%{
+          transform: rotateZ(310deg);
+          // fill: #39ff14;
+          // filter: drop-shadow(0 0 8px #39ff14) drop-shadow(0 0 200px #39ff14);
+        }
+        30% {
+         transform:rotateZ(0deg);
         }
       }
     }
@@ -156,6 +170,29 @@
       }
       .textLine3{
       font-size:25px;
+            @keyframes terarium {
+        5% {
+         transform:translate(0px,0px);
+         opacity: 1;
+        }
+        6% {
+         transform: translate(188px,0px);
+        }
+        22%{
+          opacity: 1;
+        }
+        23% {
+         transform: translate(188px,0px);
+         opacity: 0;
+        }
+        26% {
+         transform: translate(0px,0px);
+         
+        }
+        80% {
+         opacity: 0;
+        }
+      }
       }
       .textLine4{
       font-size:16px;
