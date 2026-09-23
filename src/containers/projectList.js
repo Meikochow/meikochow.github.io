@@ -261,7 +261,7 @@ const projectList = {
   projectDescription:"A ReactJs, Anime-themed, memory game",
   projectThumbNailLink :"./assets/projects/games/flip.png",
   projectTech :"ReactJs, CSS, keyframes and HTML5",
-  projectHref :"https://anime-flip.glitch.me/",
+  projectHref :"https://anime-flip-card-game.onrender.com/",
   code:'github',
   codeLink:"https://github.com/Meikochow/anime-flip"
   }
